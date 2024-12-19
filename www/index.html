@@ -512,6 +512,25 @@ window.addEventListener('unload', function() {
         postsListener = null;
     }
 });
+var canvas;
+var ctx;
+
+
+
+$(function() { 
+        canvas = $("#mycanvas")[0];
+        ctx = canvas.getContext("2d");
+
+        $('#btnB').click(function(e) {
+            btnBClick(e);
+        });
+    });
+
+function btnBClick(e){
+     $("body").css("backgroundolor","#ff0000");
+}
+
+
     </script>
 </head>
 <body>
@@ -615,5 +634,6 @@ window.addEventListener('unload', function() {
             </div>
         </div>
     </div>
+    <button id="btnb">ButtonB</button> 
 </body>
 </html>
